@@ -1,43 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/jps2wmo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <!-- Navigation bar -->
-    <nav>
-      <a class="title" href="./index.html">emily kim</a>
-      <ul>
-        <li><a class="nav-link" href="./index.html">Home</a></li>
-        <li><a class="nav-link" href="./about.html">About</a></li>
-        <li><a class="nav-link" href="./contact.html">Contact</a></li>
-      </ul>
-      <ul>
-        <li><a href="https://www.facebook.com/michael.guan.777" class="fa fa-envelope nav-link"></a></li>
-        <li><a href="https://www.facebook.com/michael.guan.777" class="fa fa-linkedin nav-link"></a></li>
-      </ul>
-    </nav>
-    <!-- Pop text -->
-    <div class="pop-text">
-      <h1>hello! 👋🏼 my name is 
-        <!-- <div data-w-id="5b4e90f0-f7c3-c61e-b8f7-2c44cff796d9" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="highlight"></div> -->
-        emily kim</h1><br>
-      <h1>I am a UX designer, 
-        food enthusiast, that focuses on crafting meaningful experiences
-        for <i>People</i>.</h1><br>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/jps2wmo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav>
+    <a class="title" href="./index.html">emily kim</a>
+    <ul>
+      <li><a class="nav-link" href="./index.html">Home</a></li>
+      <li><a class="nav-link" href="./whyux.html">Why UX?</a></li>
+      <li><a class="nav-link" href="./about.html">About</a></li>
+    </ul>
+    <ul>
+      <li><a href="mailto:cck79@cornell.edu" class="fa fa-envelope nav-link"></a></li>
+      <li><a href="https://www.linkedin.com/in/emily-kim-0b403217b/" class="fa fa-linkedin nav-link"></a></li>
+    </ul>
+  </nav>
+
+  <!-- Pop text -->
+  <div class="pop-text">
+    <h2>hello! 👋🏼 my name is
+      <!-- <div data-w-id="5b4e90f0-f7c3-c61e-b8f7-2c44cff796d9" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="highlight"></div> -->
+      emily kim
+    </h2><br>
+    <h2>I am a UX designer,
+      food enthusiast, that focuses on crafting meaningful experiences
+      for <i>People</i>.</h2><br>
+  </div>
+
+  <!-- Case Studies -->
+  <div class="main-content-home">
+
+    <div class="case-study" id="venmo-case-study">
+      <!-- <img id="photo-venmo" src="./images/venmo.png" alt="Venmo"> -->
+      <a href="./venmo.html">
+        <div class="overlay">
+          <div>
+            <h1>Venmo Redesign</h1>
+            <h4>mobile app</h4>
+            <h3>"splitting bills with ease"</h3>
+
+          </div>
+        </div>
+      </a>
     </div>
-    <button class="center">Why UX?</button>
-    <br>
-    <!-- Case Studies -->
-    <div class="case-study">
-      <img id="photo-venmo" src="./images/venmo.png" alt="Venmo">
-      <div class="overlay">Hello</div>
+    <div class="case-study" id="ume-case-study">
+      <!-- <img id="photo-freetery" src="./images/freetery.png" alt="Freetery"> -->
+      <div class="overlay">
+        <div>
+          <h1>Ume</h1>
+          <h4><i>browser extension</i></h4>
+          <h3>"providing task collaboration and transparency in the workplace" </h3>
+        </div>
+      </div>
     </div>
-    <div class="case-study">
-      <img id="photo-freetery" src="./images/freetery.png" alt="Freetery">
+    <div class="case-study" id="freetery-case-study">
+      <!-- <img id="photo-freetery" src="./images/freetery.png" alt="Freetery"> -->
+      <a href="./freetery.html">
+        <div class="overlay">
+          <div>
+            <h1>Freetery</h1>
+            <h4><i>mobile app</i></h4>
+            <h3>"efficiently post and locate free food on campus" </h3>
+          </div>
+        </div>
+      </a>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

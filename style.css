@@ -1,52 +1,133 @@
-body {
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
   font-family: josefin-sans, sans-serif;
-  margin: 50px 50px;
+  /* margin: 50px 50px; */
   justify-content: center;
+  text-align: center;
 }
-h1, p {
+
+body.case-study-page {
+  background-color: #E7E3DC;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 30px;
+  margin-top: 70px;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 26px;
+  margin-top: 2px;
+  font-weight: normal;
+}
+
+h1,
+p {
   justify-content: center;
   margin: auto;
-
 }
+
+p {
+  font-size: 25px;
+  margin: 30px 0px 30px 0px;
+  font-weight: normal;
+}
+
+
 nav {
   display: flex;
+  margin: 20px 20px;
   justify-content: space-between;
   align-items: center;
 }
-nav a {
+
+a {
   text-decoration: none;
   color: black;
 }
+
 nav ul {
   list-style: none;
 }
+
 nav li {
   text-align: left;
   display: inline;
   padding: 5px 10px;
 }
+
+blockquote {
+  border-left: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #11674E;
+  width: 100%;
+  height: 100px;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
 .title {
   font-size: 30px;
 }
-.center, .pop-text {
+
+.flex {
+  justify-content: left;
+  align-items: center;
+  display: flex;
+}
+
+.flex div {
+  width: 50%;
+}
+
+.center,
+.pop-text {
   /* display: flex; */
   justify-content: center;
   align-items: center;
 }
 
 .pop-text {
-  margin: 50px 50px;
+  margin: 100px 300px;
 }
 
 img {
-  width: 40%;
-  margin: 20px;
+  width: 80%;
 }
 
 .case-study {
+  position: relative;
+  align-items: center;
   width: 1400px;
   height: 600px;
-  margin: 20px;
+  margin: 20px auto;
 }
 
 .case-study img {
@@ -55,23 +136,119 @@ img {
 }
 
 .highlight {
-    position: absolute;
-    left: 4%;
-    top: 50%;
-    right: 0%;
-    bottom: auto;
-    height: 36%;
-    margin-right: 4px;
-    background-color: rgba(224, 193, 66, 0.5);
-    -webkit-perspective: none;
-    perspective: none;
-    -webkit-transform-origin: 0% 50%;
-    -ms-transform-origin: 0% 50%;
-    transform-origin: 0% 50%;
+  position: relative;
+  left: 4%;
+  top: 50%;
+  right: 0%;
+  bottom: auto;
+  height: 36%;
+  margin-right: 4px;
+  background-color: rgba(224, 193, 66, 0.5);
+  -webkit-perspective: none;
+  perspective: none;
+  -webkit-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
 }
 
 .nav-link:hover {
   color: #f2c7e4;
   /* font-weight: 700; */
   transition: all ease 0.5s;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  /* Black see-through */
+  color: #f1f1f1;
+  width: 1360px;
+  height: 560px;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+#freetery-case-study {
+  background: linear-gradient(-45deg, #11674E, #41C97A);
+}
+
+#ume-case-study {
+  background: linear-gradient(-45deg, #FFF8F0, #FF9574);
+}
+
+#venmo-case-study {
+  background: linear-gradient(-45deg, #7c43e6, #3172D7);
+}
+
+.main-content {
+  width: 60%;
+  margin: auto;
+}
+
+.main-content-home {
+  /* width: 60%; */
+  align-items: center;
+  margin: auto;
+}
+
+.case-study:hover .overlay {
+  opacity: 1;
+}
+
+.case-study-main-content h1,
+.case-study-main-content h2,
+.case-study-main-content h3,
+.case-study-main-content p,
+.case-study-main-content ol,
+.case-study-main-content ul {
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.case-study-main-content ol {
+  text-align: left;
+}
+
+
+.case-study-main-content h1 {
+  font-size: 50px;
+}
+
+.case-study-main-content h2 {
+  font-size: 40px;
+}
+
+.case-study-main-content h3 {
+  font-size: 30px;
+}
+
+
+.case-study-main-content p {
+  margin: 10px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#venmo-main-content {
+  width: 60%;
+  margin: auto;
+}
+
+#venmo-footer,
+#venmo-footer a {
+  color: white;
+}
+
+#about-text {
+  padding: 0px 50px 0px 0px;
 }
