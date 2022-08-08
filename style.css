@@ -49,7 +49,6 @@ p {
   font-weight: normal;
 }
 
-
 nav {
   display: flex;
   margin: 20px 20px;
@@ -79,14 +78,71 @@ blockquote {
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  padding: 5px;
   align-items: center;
   background-color: #11674E;
   width: 100%;
   height: 100px;
 }
+
+/* mark {
+  display: inline-block;
+  line-height: 0em;
+  padding-bottom: 0.5em;
+  background: white;
+  background: linear-gradient(to left, white 50%, yellow 50%) right;
+  transition: .5s ease-out;
+}
+
+mark:hover {
+  background-position: left;
+} */
+
+mark {
+  display: inline-block;
+  /* padding: 1em 2em; */
+  line-height: 0em;
+  padding-bottom: 0.5em;
+  text-align: center;
+  /* color: white; */
+  background: white;
+  /* default color */
+
+  /* "to left" / "to right" - affects initial color */
+  background: linear-gradient(to left, white 50%, salmon 50%) left;
+  background-size: 200%;
+  animation: 2s translate;
+}
+
+mark.yellow-highlight {
+  background: linear-gradient(to left, white 50%, #F9D450 50%) left;
+  background-size: 200%;
+  animation: 2s translate;
+}
+
+/* 
+mark.yellow-highlight:hover {
+  background-position: right;
+} */
+
+
+@keyframes translate {
+  from {
+    background-position: right;
+  }
+
+  to {
+    background-position: left;
+  }
+}
+
+/* mark {
+  transition: ease-out 5s;
+  background-position: left;
+} */
 
 .break {
   flex-basis: 100%;
@@ -178,18 +234,6 @@ img {
   text-align: center;
 }
 
-#freetery-case-study {
-  background: linear-gradient(-45deg, #11674E, #41C97A);
-}
-
-#ume-case-study {
-  background: linear-gradient(-45deg, #FFF8F0, #FF9574);
-}
-
-#venmo-case-study {
-  background: linear-gradient(-45deg, #7c43e6, #3172D7);
-}
-
 .main-content {
   width: 60%;
   margin: auto;
@@ -219,7 +263,6 @@ img {
   text-align: left;
 }
 
-
 .case-study-main-content h1 {
   font-size: 50px;
 }
@@ -232,11 +275,44 @@ img {
   font-size: 30px;
 }
 
-
 .case-study-main-content p {
   margin: 10px;
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
+}
+
+.thumbnail {
+  width: 40%;
+  padding-left: 0%;
+  padding-right: 5%;
+}
+
+.path {
+  stroke-width: 8;
+  stroke: rgb(59, 43, 175);
+  fill: transparent;
+  animation: dash 3s ease-in;
+  /* infinite alternate; */
+  animation-fill-mode: forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+#freetery-case-study {
+  background: linear-gradient(-45deg, #11674E, #41C97A);
+}
+
+#ume-case-study {
+  background: linear-gradient(-45deg, #FFF8F0, #FF9574);
+}
+
+#venmo-case-study {
+  background: linear-gradient(-45deg, #7c43e6, #3172D7);
 }
 
 #venmo-main-content {
@@ -251,4 +327,16 @@ img {
 
 #about-text {
   padding: 0px 50px 0px 0px;
+}
+
+#venmo-thumbnail {
+  width: 100%;
+  height: auto;
+  /* height: 100%; */
+}
+
+#blueberry {
+  position: absolute;
+  top: 18%;
+  left: 50%;
 }
