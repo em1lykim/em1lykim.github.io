@@ -11,13 +11,16 @@
 <body>
   <!-- Navigation bar -->
   <nav>
-    <a class="title" href="./index.html">emily kim</a>
-    <ul>
-      <li><a class="nav-link" href="./index.html">Home</a></li>
+    <a class="title" href="./index.html" style="flex: 1">
+      <img id="emily-logo" src="./images/emily-logo.png" alt="Emily Logo">
+      <div style="display: inline; position: relative; bottom: 10px;">emily kim</div>
+    </a>
+    <ul style="flex: 1">
+      <li><a class="nav-link" href="./index.html"><u>Home</u></a></li>
       <li><a class="nav-link" href="./whyux.html">Why UX?</a></li>
       <li><a class="nav-link" href="./about.html">About</a></li>
     </ul>
-    <ul>
+    <ul style="flex: 1">
       <li><a href="mailto:cck79@cornell.edu" class="fa fa-envelope nav-link"></a></li>
       <li><a href="https://www.linkedin.com/in/emily-kim-0b403217b/" class="fa fa-linkedin nav-link"></a></li>
     </ul>
@@ -25,12 +28,12 @@
 
   <!-- Pop text -->
   <div class="pop-text">
-    <h2>hello! 👋🏼 my name is
+    <h2>hello! my name is
       <!-- <div data-w-id="5b4e90f0-f7c3-c61e-b8f7-2c44cff796d9" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="highlight"></div> -->
-      emily kim
-    </h2><br>
-    <h2>I am a <mark>UX designer</mark> and
-      <mark>food enthusiast</mark> that focuses on crafting meaningful experiences
+      Emily Kim
+    </h2>
+    <h2 style="font-size: 35px;">I am a <mark>UX designer</mark> with a background in
+      <mark>food science</mark> and <mark>product development</mark> that focuses on crafting meaningful experiences
       for <i><mark class="yellow-highlight">People</mark></i>.
     </h2><br>
   </div>
@@ -41,7 +44,7 @@
     <div class="case-study" id="venmo-case-study">
       <!-- <img id="photo-venmo" src="./images/venmo.png" alt="Venmo"> -->
       <div id="blueberry">
-        <svg viewBox="-10 -10 532 532" style="width: 500px; height: 500px;">
+        <svg class="reveal" viewBox="-10 -10 532 532" style="width: 500px; height: 500px;">
 
           <path class="path"
             d="M431.553 359.056C379.076 453.777 261.769 489.045 169.581 437.971C77.3928 386.897 45.086 268.741 97.5631 174.02C150.04 79.2988 267.347 44.0307 359.535 95.1046C451.723 146.178 484.03 264.335 431.553 359.056Z" />
@@ -67,13 +70,15 @@
     </div>
     <div class="case-study" id="ume-case-study">
       <!-- <img id="photo-freetery" src="./images/freetery.png" alt="Freetery"> -->
-      <div class="overlay">
-        <div>
-          <h1>Ume</h1>
-          <h4><i>browser extension</i></h4>
-          <h3>"providing task collaboration and transparency in the workplace" </h3>
+      <a href="./ume.html">
+        <div class="overlay">
+          <div>
+            <h1>Ume</h1>
+            <h4><i>browser extension</i></h4>
+            <h3>"providing task collaboration and transparency in the workplace" </h3>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
     <div class="case-study" id="freetery-case-study">
       <!-- <img id="photo-freetery" src="./images/freetery.png" alt="Freetery"> -->

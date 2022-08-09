@@ -63,6 +63,7 @@ a {
 
 nav ul {
   list-style: none;
+  font-size: 20px;
 }
 
 nav li {
@@ -123,12 +124,6 @@ mark.yellow-highlight {
   animation: 2s translate;
 }
 
-/* 
-mark.yellow-highlight:hover {
-  background-position: right;
-} */
-
-
 @keyframes translate {
   from {
     background-position: right;
@@ -139,18 +134,14 @@ mark.yellow-highlight:hover {
   }
 }
 
-/* mark {
-  transition: ease-out 5s;
-  background-position: left;
-} */
-
 .break {
   flex-basis: 100%;
   height: 0;
 }
 
 .title {
-  font-size: 30px;
+  margin: 20px;
+  font-size: 40px;
 }
 
 .flex {
@@ -166,12 +157,13 @@ mark.yellow-highlight:hover {
 .center,
 .pop-text {
   /* display: flex; */
+  overflow: visible;
   justify-content: center;
   align-items: center;
 }
 
 .pop-text {
-  margin: 100px 300px;
+  margin: 10px 100px;
 }
 
 img {
@@ -205,6 +197,10 @@ img {
   -webkit-transform-origin: 0% 50%;
   -ms-transform-origin: 0% 50%;
   transform-origin: 0% 50%;
+}
+
+.nav-link {
+  text-underline-offset: 3px;
 }
 
 .nav-link:hover {
@@ -255,7 +251,7 @@ img {
 .case-study-main-content p,
 .case-study-main-content ol,
 .case-study-main-content ul {
-  margin: 20px;
+  margin: 10px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -276,7 +272,8 @@ img {
 }
 
 .case-study-main-content p {
-  margin: 10px;
+  line-height: 30px;
+  margin: 40px 5px;
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
 }
@@ -291,15 +288,31 @@ img {
   stroke-width: 8;
   stroke: rgb(59, 43, 175);
   fill: transparent;
-  animation: dash 3s ease-in;
+}
+
+.path.active {
+  stroke-width: 8;
+  stroke: rgb(59, 43, 175);
+  fill: transparent;
+  animation: dash 1s ease-in;
   /* infinite alternate; */
   animation-fill-mode: forwards;
 }
 
 @keyframes dash {
+  /* from {
+    stroke-dashoffset: 1000;
+  } */
+
   to {
     stroke-dashoffset: 0;
   }
+}
+
+.prototype-gif {
+  margin: auto;
+  margin-bottom: 40px;
+  width: 50%;
 }
 
 
@@ -316,7 +329,7 @@ img {
 }
 
 #venmo-main-content {
-  width: 60%;
+  width: 80%;
   margin: auto;
 }
 
@@ -339,4 +352,12 @@ img {
   position: absolute;
   top: 18%;
   left: 50%;
+}
+
+#emily-logo {
+  width: 50px;
+  flex-grow: 1;
+  /* position: absolute; */
+  /* top: 0%; */
+  /* left: -1%; */
 }
