@@ -74,6 +74,9 @@ nav li {
 
 blockquote {
   border-left: 2px solid black;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
   padding: 10px;
   margin: 10px;
 }
@@ -264,18 +267,25 @@ img {
 }
 
 .case-study-main-content h2 {
-  font-size: 40px;
-}
-
-.case-study-main-content h3 {
   font-size: 30px;
 }
 
-.case-study-main-content p {
+.case-study-main-content h3 {
+  font-size: 25px;
+}
+
+.case-study-main-content p,
+.case-study-main-content ol,
+.case-study-main-content ul {
   line-height: 30px;
   margin: 40px 5px;
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
+}
+
+.case-study-main-content img {
+  max-height: 500px;
+  width: auto;
 }
 
 .thumbnail {
@@ -310,9 +320,36 @@ img {
 }
 
 .prototype-gif {
-  margin: auto;
+  margin: 30px;
   margin-bottom: 40px;
-  width: 50%;
+  width: 30%;
+}
+
+.prototype-gif p {
+  margin: auto;
+}
+
+.title div {
+  display: inline;
+  position: relative;
+  bottom: 20px;
+}
+
+.about-content {
+  width: 80%;
+  margin: auto;
+}
+
+#prototype-gifs {
+  display: flex;
+  /* flex: 0 0 auto; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  /* margin-bottom: 40px; */
+  width: 90%;
 }
 
 
@@ -339,10 +376,17 @@ img {
 }
 
 #about-text {
-  padding: 0px 50px 0px 0px;
+  /* margin: 0px 100px; */
+  padding: 0px 100px;
 }
 
 #venmo-thumbnail {
+  width: 100%;
+  height: auto;
+  /* height: 100%; */
+}
+
+#freetery-thumbnail {
   width: 100%;
   height: auto;
   /* height: 100%; */
@@ -355,9 +399,14 @@ img {
 }
 
 #emily-logo {
-  width: 50px;
+  width: 70px;
   flex-grow: 1;
   /* position: absolute; */
   /* top: 0%; */
   /* left: -1%; */
+}
+
+#freetery-gif {
+  margin: auto;
+  margin-bottom: 20px;
 }
