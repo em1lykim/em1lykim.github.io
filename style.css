@@ -11,9 +11,9 @@ ol {
   text-align: center;
 }
 
-body.case-study-page {
+/* body.case-study-page {
   background-color: #E7E3DC;
-}
+} */
 
 h1 {
   font-size: 70px;
@@ -73,21 +73,24 @@ nav li {
 }
 
 blockquote {
-  border-left: 2px solid black;
-  font-size: 20px;
+  border-left: 2px solid #3172D7;
+  font-size: 25px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 100;
+  font-weight: bold;
+  line-height: 40px;
   padding: 10px;
-  margin: 10px;
+  margin: auto;
+  width: 65%;
+  color: #3172D7;
 }
 
 footer {
-  /* display: flex; */
+  display: flex;
   /* flex-direction: column; */
-  /* justify-content: space-between; */
-  padding: 5px;
+  justify-content: center;
+  align-items: flex-start;
+  /* padding: 5px; */
   align-items: center;
-  background-color: #11674E;
   width: 100%;
   height: 100px;
 }
@@ -137,6 +140,34 @@ mark.yellow-highlight {
   }
 }
 
+.casestudy-header-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px 20px;
+}
+
+#venmo-banner-thumbnail {
+  width: 500px;
+  height: autocenter
+}
+
+.casestudy-header-text h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.casestudy-header-text h3 {
+  font-family: 'Montserrat', sans-serif;
+  /* font-weight: bold; */
+  text-align: left;
+  font-size: 20px;
+  margin: 10px;
+  /* color: rgb(104, 104, 210); */
+}
+
 .break {
   flex-basis: 100%;
   height: 0;
@@ -148,9 +179,9 @@ mark.yellow-highlight {
 }
 
 .flex {
-  justify-content: left;
-  align-items: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex div {
@@ -166,7 +197,8 @@ mark.yellow-highlight {
 }
 
 .pop-text {
-  margin: 10px 100px;
+  width: 60%;
+  margin: auto;
 }
 
 img {
@@ -175,10 +207,13 @@ img {
 
 .case-study {
   position: relative;
+  bottom: 0px;
+  left: 0px;
   align-items: center;
   width: 1400px;
   height: 600px;
   margin: 20px auto;
+  transition: .5s ease;
 }
 
 .case-study img {
@@ -219,8 +254,8 @@ img {
   align-items: center;
   justify-content: center;
   bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgb(0, 0, 0); */
+  background: rgba(0, 0, 0, 0.25);
   /* Black see-through */
   color: #f1f1f1;
   width: 1360px;
@@ -233,8 +268,19 @@ img {
   text-align: center;
 }
 
+.overlay:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.case-study:hover {
+  position: relative;
+  /* bottom: 10px; */
+  left: 10px;
+  transition: .5s ease;
+}
+
 .main-content {
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 
@@ -244,8 +290,14 @@ img {
   margin: auto;
 }
 
-.case-study:hover .overlay {
+.active.overlay {
   opacity: 1;
+}
+
+.case-study-main-content h1,
+.case-study-main-content h2,
+.case-study-main-content h3 {
+  font-weight: bold;
 }
 
 .case-study-main-content h1,
@@ -258,8 +310,20 @@ img {
   font-family: 'Montserrat', sans-serif;
 }
 
+.case-study-main-content p,
+.case-study-main-content ol,
+.case-study-main-content ul {
+  line-height: 30px;
+  margin: 40px 5px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .case-study-main-content ol {
+  width: 60%;
+  line-height: 40px;
   text-align: left;
+  margin: auto;
 }
 
 .case-study-main-content h1 {
@@ -274,14 +338,6 @@ img {
   font-size: 25px;
 }
 
-.case-study-main-content p,
-.case-study-main-content ol,
-.case-study-main-content ul {
-  line-height: 30px;
-  margin: 40px 5px;
-  font-size: 20px;
-  font-family: 'Montserrat', sans-serif;
-}
 
 .case-study-main-content img {
   max-height: 500px;
@@ -308,6 +364,8 @@ img {
   /* infinite alternate; */
   animation-fill-mode: forwards;
 }
+
+
 
 @keyframes dash {
   /* from {
@@ -340,6 +398,26 @@ img {
   margin: auto;
 }
 
+.whyux-main p {
+  line-height: 35px;
+
+}
+
+.whyux-highlight p {
+  margin: auto;
+  /* width: 65%; */
+  color: orange;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+  /* border-left: 2px solid orange; */
+}
+
+#charcuterie-img {
+  width: 500px;
+  margin-right: 40px;
+}
+
 #prototype-gifs {
   display: flex;
   /* flex: 0 0 auto; */
@@ -354,7 +432,7 @@ img {
 
 
 #freetery-case-study {
-  background: linear-gradient(-45deg, #11674E, #41C97A);
+  background: linear-gradient(-45deg, #02825d, #afeec8);
 }
 
 #ume-case-study {
@@ -365,24 +443,51 @@ img {
   background: linear-gradient(-45deg, #7c43e6, #3172D7);
 }
 
-#venmo-main-content {
-  width: 80%;
+#venmo-main-content,
+#freetery-main-content {
+  width: 60%;
   margin: auto;
+}
+
+#freetery-main-content h1,
+#freetery-main-content h2,
+#freetery-main-content h3 {
+  color: #02825d;
+}
+
+#venmo-main-content h1,
+#venmo-main-content h2,
+#venmo-main-content h3 {
+  color: #3172D7;
+}
+
+.freetery-color {
+  color: #02825d;
 }
 
 #venmo-footer,
 #venmo-footer a {
   color: white;
+  background-color: #3172D7;
+}
+
+#ume-footer,
+#ume-footer a {
+  color: white;
+  background-color: #FF9574;
 }
 
 #about-text {
   /* margin: 0px 100px; */
+  line-height: 50px;
   padding: 0px 100px;
 }
 
 #venmo-thumbnail {
-  width: 100%;
+  width: 120%;
   height: auto;
+  position: relative;
+  right: 15%;
   /* height: 100%; */
 }
 
@@ -409,4 +514,15 @@ img {
 #freetery-gif {
   margin: auto;
   margin-bottom: 20px;
+}
+
+#whyux-main h2,
+h3,
+h4,
+p,
+ul,
+ol {
+  /* font-family: 'Poppins', 'sans-serif'; */
+  /* font-family: josefin-sans, sans-serif; */
+  /* color: red; */
 }

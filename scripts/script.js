@@ -17,9 +17,9 @@ function reveal() {
       if (elementTop < windowHeight - elementVisible) {
         children[j].classList.add("active");
       }
-      // else {
-      //   children[j].classList.remove("active");
-      // }
+      else {
+        children[j].classList.remove("active");
+      }
     }
   }
 }
