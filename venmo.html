@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600&family=Open+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
   <!-- Hotjar Tracking Code for my site -->
   <script>
     (function (h, o, t, j, a, r) {
@@ -45,9 +47,9 @@
     <h1>Venmo Concept: Efficiently Split Group Payments</h1>
     <div class="casestudy-header-banner">
       <span>
-        <h3><u>Who:</u> Designer (me)</h3> <br>
-        <h3><u>Role:</u> UX/UI Design, User Research, Visual Design, Prototyping</h3> <br>
-        <h3><u>Timeline:</u> 8 Weeks</h3>
+        <h3><b>Who:</b> Designer (me)</h3> <br>
+        <h3><b>Role:</b> UX/UI Design, User Research, Visual Design, Prototyping</h3> <br>
+        <h3><b>Timeline:</b> 8 Weeks</h3>
       </span>
       <span>
         <img id="venmo-banner-thumbnail" src="./images/venmo_thumbnail.png" alt="Venmo thumbnail">
@@ -58,160 +60,244 @@
 
   <div class="case-study-main-content" id="venmo-main-content">
 
-    <p>Towards the end of 2021, I went on a road trip with a couple of friends to Chicago. The bill came out quite
-      complicated, accounting for AirBnB stay, restaurants, and other activities. My friend calculated how much each of
-      should pay via Excel and the calculator built into his phone, sent a photo of how the bill was split to us, and
-      then
-      used Venmo at the end to make the money transfer.</p>
-    <p>I began to wonder if there was a more efficient way to split bills and if other Venmo users ran into this hassle
-      as
-      well.
-    </p>
-    <p>The Venmo app allows users to request and send money to your friends or businesses, all within a social circle.
-      Unfortunately, while the app's interface is simple and easy to use, splitting bills has been tedious and
-      unintuitive.</p>
 
-    <!-- People Problem -->
-    <h2>People Problem</h2>
-    <p>When I am making group payments in Venmo, I want to split expenses easily so I can pay back everyone accurately.
-      But I can't do that well because:</p>
-    <ol>
-      <li>It's hard to keep track of who paid for what expense, who owes who and how much</li>
-      <li>It's difficult and time-consuming to make group payments
-      </li>
-    </ol>
-    <p>I recruited my two friends, Michael and Tim, to help me brainstorm some potential solutions.</p>
-    <img src="./images/venmo_group_photo.jpg" alt="Venmo Group Photo">
-
-    <!-- Solutions -->
-    <p>After categorizing and going through viable solutions, I narrowed down to three ideas:</p>
-    <p>1. Digitalizing and Storing Receipts</p>
-    <p>This feature would allow users to take photos of the receipts and share them with everyone in the group. This is
-      useful for users if they lose receipts or forget about transactions. It would increase efficiency with sorting
-      orders with multiple people, but utilizing computer vision and camera features would cause some concern about
-      accuracy and how easy it is to implement. After conducting user interviews, people were skeptical of the idea
-      since
-      some receipts are online and also across different platforms.</p>
-
-    <p>2. Custom Changes within Group Payment</p>
-    <p>This feature allows users to make custom deductions or pay for people within a group payment. We felt that Venmo
-      does not easily support paying for other people or making custom deductions based on their relationship with the
-      person. Unfortunately, this may discourage users from utilizing Venmo since privacy is a big concern.</p>
-
-    <p>3. Split Calculation</p>
-    <p>One of the biggest key pain points of users is splitting bills because most choose to split by orders and
-      therefore
-      this feature would cater to the users' needs. Although there is currently a way to link Splitwise to Venmo, we
-      felt
-      that directly having the calculator features on Venmo would be more user-friendly because it reduces the number of
-      clicks to transfer between apps. Including a customizable way to split group payments gives users flexibility to
-      easily calculate who owes who and how much.</p>
-
-    <p>Comparing the pros and cons of each idea, I decided to go with the “Split Calculation Feature” because it has the
-      highest feasibility and highest impact.</p>
-
-    <h2>Understanding How Users Currently Split Bills</h2>
-    <P>There are two main groups of users when it comes to splitting bills:</P>
-
-    <ol>
-      <li>Users that use Splitwise to split the bills and then complete the transaction over on Venmo</li>
-      <li>Users that punch in the numbers on their calculator and hope that it is accurate</li>
-    </ol>
-
-    <!-- Lo fi diagram -->
-    <h2>Low-Fidelity Diagram</h2>
-    <img src="./images/venmo_lofi.png" alt="Venmo Low-Fidelity">
-
-    <h2>UI Kit</h2>
-    <img src="./images/venmo_ui_kit.png" alt="Venmo UI Kit">
-
-    <h2>User Testing</h2> <!-- ask emily about this-->
-    <h2>Feature Requirements — Why Include an Even Bill Split Option if Venmo Already has One?</h2>
-    <p>Since my “custom split” feature follows a more complicated flow and the pop-ups are different, it would make more
-      sense to have the “even split” flow parallel to the custom one so that users have familiarity and of how both
-      flows would realistically work in the app.</p>
-
-    <h2>Selecting Multiple Users</h2>
-    <p>
-      Through user testing, I noticed that users would find it more convenient to use the app if there was a multiple
-      checkbox option to select everyone at once. However, I chose not to design this for two reasons:
-
-    </p>
-    <ol>
-      <li>It is most consistent with Venmo's current UI and since the “custom split” would be a significant change to
-        the UX experience, I prioritized consistency so that users would better smoothly adjust to this new feature
-      </li>
-      <li>I did not want to replace the iconic “Pay or Request” button on the homepage and first selecting the user
-        allows users to use it normally and Venmo one person.</li>
-    </ol>
-
-    <h2>Visual Design: Name Layout After Creating Group</h2>
-    <img src="./images/venmo-group-creation.png" alt="Venmo Group Creation">
-    <p>Option A is in the same layout for the receipt summary screen while Option B is more consistent with Venmo's
-      current UI. After user testing, I found that users would prefer consistency and not having to scroll down the page
-      if there are many users to double check who is included in the group. Therefore, I decided to go with Option B.
-    </p>
-
-    <h2>How Wording Changes Everything</h2>
-    <img src="./images/venmo-wording.png" alt="Venmo Wording">
-    <p>During user testing, users were confused by what “total” and “grand total” referred to (Option C). I chose Option
-      D because the wording is more clear since subtotal refers to a calculation that is part of a larger total sum
-      while total refers to the final, overall sum. In this case, subtotal is a better fit since “extras” must be added.
-      This is similar to the wording found on a bill at a restaurant, therefore more users would be able to understand
-      Option D better.</p>
-
-    <img src="./images/venmo-payment-selection.png" alt="Venmo Payment Selection">
-    <p>One of my key aspects of my feature is to have a way for the user to change who paid to prevent the user who paid
-      the bill to always having to split the bill and Venmo request everyone. My initial design is shown in the first
-      screen, however, through user research and testing, the visual design was not consistent with Venmo's interface,
-      and it took up too much space on the screen. I browsed around the Venmo app to see how pop-ups are shown and an
-      example is shown in the second screen above. For my high-fidelity, I chose to present the information shown in the
-      third and fourth screens above.</p>
-
-    <h2>A Feedback I Didn't Expect</h2>
-    <blockquote>
-      "I was a bit confused with the “Share With” icon because I thought it was a feature to share it on social
-      media"
-    </blockquote>
-    <p>Based on this user feedback, I did icon design explorations and came up with the following four icons:</p>
-    <img src="./images/venmo-icons.png" alt="Venmo Icons">
-    <p>Option E was the one used for user testing and it is similar to social media share icons such as the one used for
-      TikTok. Option F may indicate “distributing money” rather than evenly splitting the cost of an item. Option G
-      represents evenly splitting as well as fits Venmo's simple interface so this option was chosen for high-fidelity
-      prototyping. Option H seemed to be Option G but a complicated version so I did not pursue this design.</p>
-
-    <h2>Combining It All Together</h2>
-
-    <div id="prototype-gifs">
-      <div class="prototype-gif">
-        <img src="./images/venmo-gif1.gif" alt="Venmo Flow 1"><br>
-        <p>
-          Selecting Users and Splitting the Bill Evenly and By Custom
-        </p>
+    <div class="case-study-section">
+      <div class="case-study-section-title">
+        <h2>Context</h2>
       </div>
-
-      <div class="prototype-gif">
-        <img src="./images/venmo-gif2.gif" alt="Venmo Flow 2"><br>
-        <p>
-          Notification Page and Confirming a Venmo Request
+      <div class="case-study-section-content">
+        <p>Towards the end of 2021, I went on a road trip with a couple of friends to Chicago. The bill came out quite
+          complicated, accounting for AirBnB stay, restaurants, and other activities. My friend calculated how much
+          each
+          of
+          should pay via Excel and the calculator built into his phone, sent a photo of how the bill was split to us,
+          and
+          then
+          used Venmo at the end to make the money transfer.</p>
+        <p>I began to wonder if there was a more efficient way to split bills and if other Venmo users ran into this
+          hassle
+          as
+          well.
         </p>
+        <p>The Venmo app allows users to request and send money to your friends or businesses, all within a social
+          circle.
+          Unfortunately, while the app's interface is simple and easy to use, splitting bills has been tedious and
+          unintuitive.</p>
+      </div>
+    </div>
+    <div class="case-study-section">
+      <div class="case-study-section-title">
+        <h2>Design Goal</h2>
+      </div>
+      <div class="case-study-section-content">
+        <!-- People Problem -->
+        <h2>People Problem</h2>
+        <p>When I am making group payments in Venmo, I want to split expenses easily so I can pay back everyone
+          accurately.
+          But I can't do that well because:</p>
+        <ol>
+          <li>It's hard to keep track of who paid for what expense, who owes who and how much</li>
+          <li>It's difficult and time-consuming to make group payments
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="case-study-section">
+      <div class="case-study-section-title">
+        <h2>Brainstorm</h2>
+      </div>
+      <div class="case-study-section-content">
+        <p>I recruited my two friends, Michael and Tim, to help me brainstorm some potential solutions.</p>
+        <img src="./images/venmo_group_photo.jpg" alt="Venmo Group Photo">
+
+        <!-- Solutions -->
+        <p>After categorizing and going through viable solutions, I narrowed down to three ideas:</p>
+        <p>1. Digitalizing and Storing Receipts</p>
+        <p>This feature would allow users to take photos of the receipts and share them with everyone in the group.
+          This
+          is
+          useful for users if they lose receipts or forget about transactions. It would increase efficiency with
+          sorting
+          orders with multiple people, but utilizing computer vision and camera features would cause some concern
+          about
+          accuracy and how easy it is to implement. After conducting user interviews, people were skeptical of the
+          idea
+          since
+          some receipts are online and also across different platforms.</p>
+
+        <p>2. Custom Changes within Group Payment</p>
+        <p>This feature allows users to make custom deductions or pay for people within a group payment. We felt that
+          Venmo
+          does not easily support paying for other people or making custom deductions based on their relationship with
+          the
+          person. Unfortunately, this may discourage users from utilizing Venmo since privacy is a big concern.</p>
+
+        <p>3. Split Calculation</p>
+        <p>One of the biggest key pain points of users is splitting bills because most choose to split by orders and
+          therefore
+          this feature would cater to the users' needs. Although there is currently a way to link Splitwise to Venmo,
+          we
+          felt
+          that directly having the calculator features on Venmo would be more user-friendly because it reduces the
+          number
+          of
+          clicks to transfer between apps. Including a customizable way to split group payments gives users
+          flexibility to
+          easily calculate who owes who and how much.</p>
+
+        <p>Comparing the pros and cons of each idea, I decided to go with the “Split Calculation Feature” because it
+          has
+          the
+          highest feasibility and highest impact.</p>
+
+        <P>There are two main groups of users when it comes to splitting bills:</P>
+
+        <ol>
+          <li>Users that use Splitwise to split the bills and then complete the transaction over on Venmo</li>
+          <li>Users that punch in the numbers on their calculator and hope that it is accurate</li>
+        </ol>
+      </div>
+    </div>
+    <div class="case-study-section">
+      <div class="case-study-section-title">
+        <h2>Low Fidelity Diagram</h2>
+      </div>
+      <div class="case-study-section-content">
+        <!-- Lo fi diagram -->
+        <img src="./images/venmo_lofi.png" alt="Venmo Low-Fidelity">
+
       </div>
     </div>
 
+    <div class="case-study-section">
+      <div class="case-study-section-title">
+        <h2>UI Kit</h2>
+      </div>
+      <div class="case-study-section-content">
+        <img src="./images/venmo_ui_kit.png" alt="Venmo UI Kit">
 
-    <!-- <h2>How Does This Feature Fit in Venmo's simple concept idea?</h2>
-    <p>Although splitting a group bill itself is a complicated process, I discovered through user testing that this
-      feature still allows users to use Venmo as before (Venmo-ing one user at a time). Users said that they would use
-      the feature if they are comfortable with it and people who want to utilize the “custom split” feature will do so
-      and people who do not want to, this feature will not change or complicate what they have been doing.</p> -->
+        <p>Since my “custom split” feature follows a more complicated flow and the pop-ups are different, it would
+          make
+          more
+          sense to have the “even split” flow parallel to the custom one so that users have familiarity and of how
+          both
+          flows would realistically work in the app.</p>
 
-    <h2>Conclusion</h2>
-    <p>Venmo users struggle with the tediousness of splitting group bills. I hope that this feature can lessen the
-      headache of splitting group payments while allowing people to “change people's relationships with money and each
-      other”.</p>
+        <p>
+          Through user testing, I noticed that users would find it more convenient to use the app if there was a
+          multiple
+          checkbox option to select everyone at once. However, I chose not to design this for two reasons:
 
-    <!-- <h2>Lessons Learned</h2> -->
+        </p>
+        <ol>
+          <li>It is most consistent with Venmo's current UI and since the “custom split” would be a significant change
+            to
+            the UX experience, I prioritized consistency so that users would better smoothly adjust to this new
+            feature
+          </li>
+          <li>I did not want to replace the iconic “Pay or Request” button on the homepage and first selecting the
+            user
+            allows users to use it normally and Venmo one person.</li>
+        </ol>
+      </div>
+    </div>
 
+    <div class="case-study-section">
+      <div class="case-study-section-title">
+        <h2>Iterations</h2>
+      </div>
+      <div class="case-study-section-content">
+        <img src="./images/venmo-group-creation.png" alt="Venmo Group Creation">
+        <p>Option A is in the same layout for the receipt summary screen while Option B is more consistent with
+          Venmo's
+          current UI. After user testing, I found that users would prefer consistency and not having to scroll down
+          the
+          page
+          if there are many users to double check who is included in the group. Therefore, I decided to go with Option
+          B.
+        </p>
+
+        <img src="./images/venmo-wording.png" alt="Venmo Wording">
+        <p>During user testing, users were confused by what “total” and “grand total” referred to (Option C). I chose
+          Option
+          D because the wording is more clear since subtotal refers to a calculation that is part of a larger total
+          sum
+          while total refers to the final, overall sum. In this case, subtotal is a better fit since “extras” must be
+          added.
+          This is similar to the wording found on a bill at a restaurant, therefore more users would be able to
+          understand
+          Option D better.</p>
+
+        <img src="./images/venmo-payment-selection.png" alt="Venmo Payment Selection">
+        <p>One of my key aspects of my feature is to have a way for the user to change who paid to prevent the user
+          who
+          paid
+          the bill to always having to split the bill and Venmo request everyone. My initial design is shown in the
+          first
+          screen, however, through user research and testing, the visual design was not consistent with Venmo's
+          interface,
+          and it took up too much space on the screen. I browsed around the Venmo app to see how pop-ups are shown and
+          an
+          example is shown in the second screen above. For my high-fidelity, I chose to present the information shown
+          in
+          the
+          third and fourth screens above.</p>
+
+        <blockquote>
+          "I was a bit confused with the “Share With” icon because I thought it was a feature to share it on social
+          media"
+        </blockquote>
+        <p>Based on this user feedback, I did icon design explorations and came up with the following four icons:</p>
+        <img src="./images/venmo-icons.png" alt="Venmo Icons">
+        <p>Option E was the one used for user testing and it is similar to social media share icons such as the one
+          used
+          for
+          TikTok. Option F may indicate “distributing money” rather than evenly splitting the cost of an item. Option
+          G
+          represents evenly splitting as well as fits Venmo's simple interface so this option was chosen for
+          high-fidelity
+          prototyping. Option H seemed to be Option G but a complicated version so I did not pursue this design.</p>
+      </div>
+    </div>
+
+    <div class="case-study-section">
+      <div class="case-study-section-title">
+        <h2>Solutions</h2>
+      </div>
+      <div class="case-study-section-content">
+
+        <div id="prototype-gifs">
+          <div class="prototype-gif">
+            <img src="./images/venmo-gif1.gif" alt="Venmo Flow 1"><br>
+            <p>
+              Selecting Users and Splitting the Bill Evenly and By Custom
+            </p>
+          </div>
+
+          <div class="prototype-gif">
+            <img src="./images/venmo-gif2.gif" alt="Venmo Flow 2"><br>
+            <p>
+              Notification Page and Confirming a Venmo Request
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="case-study-section">
+      <div class="case-study-section-title">
+        <h2>Reflections</h2>
+      </div>
+      <div class="case-study-section-content">
+        <p>Venmo users struggle with the tediousness of splitting group bills. I hope that this feature can lessen the
+          headache of splitting group payments while allowing people to “change people's relationships with money and
+          each
+          other”.</p>
+
+        <!-- <h2>Lessons Learned</h2> -->
+      </div>
+    </div>
   </div>
 
   <!-- footer with next case study -->
