@@ -455,8 +455,8 @@ img {}
   display: flex;
   /* flex: 0 0 auto; */
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   margin: auto;
 
   /* margin-bottom: 40px; */
