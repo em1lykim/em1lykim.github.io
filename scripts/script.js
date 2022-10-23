@@ -5,11 +5,10 @@ Array.from(document.getElementsByClassName("path")).forEach(pathElement => {
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
-  console.log("scrolling");
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 350;
+    var elementVisible = 600;
 
     let children = reveals[i].children;
     console.log(children.length);
@@ -23,5 +22,5 @@ function reveal() {
     }
   }
 }
-
+reveal();
 window.addEventListener("scroll", reveal);
