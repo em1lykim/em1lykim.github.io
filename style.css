@@ -245,13 +245,13 @@ img {}
 }
 
 .nav-link:hover {
-  color: #c53495;
+  color: salmon;
   /* font-weight: 700; */
   transition: all ease 0.5s;
 }
 
 .nav-selected {
-  color: #c53495;
+  color: salmon;
 }
 
 /* The overlay effect - lays on top of the container and over the image */
